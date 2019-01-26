@@ -18,3 +18,22 @@ public class Problem1 {
     return sum;
   }
 }
+
+/*
+Alternate solution for this problem using a ternary operator:
+
+public static String[] fizzBuzz(int start, int end) {
+        String[] bins = new String[end - start];
+        for (int i = start; i < end; i++)
+                 String envelope = (i % 3 == 0) ? "Fizz" : "";
+                 if (i % 5 == 0) {
+                         envelope += "Buzz";
+                 }
+                 if (envelope.isEmpty()) {
+                         envelope += i;
+                 }
+                 bins[i - start] = envelope;
+        }
+        return bins;
+}
+ */
